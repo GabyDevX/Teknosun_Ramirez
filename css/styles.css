@@ -278,6 +278,11 @@ body > .grid-container {
   border-color: var(--primaryColor);
 }
 
+.index .nosotros .button:hover,
+.index .servicios .button:hover {
+  box-shadow: 0 4px 15px var(--primaryColor-opacity);
+}
+
 .index .nosotros__text {
   text-align: justify;
 }
