@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logoIcon.png" />
+    <title>TeknoSun SpA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="index grid-container">
+      <!-- inicio header -->
+      <header class="header">
+        <!-- inicio nav -->
+        <nav class="nav flex-row">
+          <a class="nav__img-link" href="index.html">
+            <img
+              class="nav__img"
+              src="images/logo_transparentDark.png"
+              alt="logo"
+            />
+          </a>
+          <ul class="nav__list flex-row">
+            <li class="nav__item">
+              <a class="nav__item-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__item-link" href="servicios.html">
+                Servicios
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__item-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__item-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__item-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- fin nav -->
+      </header>
+      <!-- fin header -->
+        <!-- inicio sección inicio -->
+        <section class="inicio container flex-column">
+          <img class="inicio__img" src="images/logo_transparentNewColors.png" alt="logoHero">
+          <h1 class="inicio__title gradient">TeknoSun SpA</h1>
+          <h2 class="inicio__subtitle">Mantención y Servicios Industriales</h2>
+          <a class="button" href="contacto.html">Contactanos</a>
+        </section>
+        <!-- fin sección inicio -->
+        <!-- inicio sección nosotros  -->
+        <section class="nosotros container flex-column">
+          <h2 class="nosotros__subtitle ">Nuestro Objetivo</h2>
+          <p class="nosotros__text">
+            Convertirse en un aliado estratégico alineado con el cliente en la
+            dirección del negocio, con el afán de satisfacer con excelencia, las
+            necesidades del mercado en el campo de la Mantención Industrial y
+            mantención eléctrica más Fabricación de repuestos sea cualquiera de sus
+            requerimientos. Proporcionar un servicio integral, de alta calidad
+            adaptado a sus necesidades y a costos competitivos.
+          </p>
+          <a class="button" href="contacto.html">Conocenos mas</a>
+        </section>
+        <!-- fin sección nosotros  -->
+        <!-- inicio sección servicios -->
+        <section class="servicios container flex-column">
+            <h2 class="servicios__subtitle ">Nuestros Servicios</h2>
+            <div class="servicios__items flex-column">
+              <p class="servicios__item-text">Mantenimiento predictivo</p>
+              <p class="servicios__item-text">Mantención de maquinaria</p>
+              <p class="servicios__item-text">Proyectos eléctricos y mecánicos</p>
+              <p class="servicios__item-text">Reparación de máquinas y equipos</p>
+              <p class="servicios__item-text">Fabricación de partes y piezas</p>
+              <p class="servicios__item-text">TeknoSun se adapta a los nuevos tiempos</p>
+            </div>
+            <a class="button" href="servicios.html">Ver detalles</a>
+          </section>
+        <!-- fin sección servicios -->
+        <!-- inicio sección contacto -->
+        <section class="contacto container">
+          <h2 class="contacto__subtitle">Comunicate con nosotros</h2>
+          <div class="contacto__container flex-row">
+            <form class="contacto__form flex-column" action="post">
+              <input class="contacto__input" type="text" placeholder="Nombre" name="Nombre" />
+              <br />
+              <input class="contacto__input" type="email" placeholder="Email" name="Email"/>
+              <br />
+              <textarea class="contacto__textarea" type="text" placeholder="Mensaje" value="Mensaje" name="Mensaje"/></textarea>
+              <br />
+              <input class="contacto__button" type="submit" value="Contactanos" />
+            </form>
+            <article class="contacto__article flex-column">
+              <div class="contacto__redes">
+                <h3 class="contacto__h3 gradient">Nuestras redes:</h3>
+                <div class="contacto__links">
+                <a class="contacto__link" href="https://www.instagram.com/teknosun_spa/"><img class="contacto__icon" src="images/instagram.png" alt="instagram icon" /></a>
+                <a class="contacto__link" href="https://www.facebook.com/teknosun.teknosun"><img class="contacto__icon" src="images/facebook.png" alt="instagram icon" /></a>
+                <a class="contacto__link" href="https://www.linkedin.com"><img class="contacto__icon" src="images/linkedin.png" alt="instagram icon" /></a>
+                </div>
+              </div>
+              <div class="contacto__datos">
+                <h3 class="contacto__h3 gradient">Datos para contactar:</h3>
+                <p class="contacto__text" >Independencia, Santiago</p>
+                <p class="contacto__text" >comercial@teknosun.cl</p>
+                <p class="contacto__text" >+56994340066</p>
+              </div>
+              <picture>
+                <img class="contacto__image" src="images/Map.png" alt="">
+              </picture>
+            </article>
+          </div>
+        </section>
+        <!-- fin sección contacto -->
+      <!-- inicio footer -->
+      <footer class="footer flex-row">
+        <p class="footer__text gradient" >copyright</p>
+        <p class="footer__text gradient">Gabriel Ramírez</p>
+      </footer>
+      <!-- fin footer  -->
+    </div>
+  </body>
+</html>
