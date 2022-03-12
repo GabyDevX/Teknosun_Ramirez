@@ -415,24 +415,14 @@ body > .servicios {
   padding-top: 8rem;
 }
 
-.servicios__contenido__item {
-  margin: 0 3.2rem;
-  padding: 3.2rem;
-  text-align: left;
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
 
-.servicios__contenido__text {
-  text-align: justify;
-}
-
-.servicios__contenido__summary {
-  font-size: 3.2em;
-  font-weight: bold;
-  margin-bottom: 3.2rem;
-}
-
-.servicios__contenido__summary:hover {
-  cursor: pointer;
+.accordion-button:focus {
+  box-shadow: none;
 }
 
 /* Galeria */
