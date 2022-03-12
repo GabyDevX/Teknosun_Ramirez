@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="contactanos grid-container">
-    <!-- inicio header -->
+      <!-- inicio header -->
       <header class="header container-fluid col-12">
         <!-- inicio nav -->
 
@@ -62,43 +62,99 @@
       </header>
       <!-- fin header -->
       <!-- inicio formulario -->
-      <section data-aos="zoom-out-up" class="contacto container">
-          <h1 class="contacto__title gradient">Comunicate con nosotros</h1>
-          <div class="contacto__container flex-row">
-            <form class="contacto__form flex-column" action="post">
-              <input class="contacto__input" type="text" placeholder="Nombre" name="Nombre" />
-              <br />
-              <input class="contacto__input" type="email" placeholder="Email" name="Email"/>
-              <br />
-              <textarea class="contacto__textarea" type="text" placeholder="Mensaje" value="Mensaje" name="Mensaje"/></textarea>
-              <br />
-              <input class="contacto__button" type="submit" value="Contactanos" />
-            </form>
-            <article class="contacto__article flex-column">
-              <div class="contacto__redes">
-                <h3 class="contacto__h3 gradient">Nuestras redes:</h3>
-                <div class="contacto__links">
-                <a class="contacto__link" href="https://www.instagram.com/teknosun_spa/"><img class="contacto__icon" src="images/instagram.png" alt="instagram icon" /></a>
-                <a class="contacto__link" href="https://www.facebook.com/teknosun.teknosun"><img class="contacto__icon" src="images/facebook.png" alt="instagram icon" /></a>
-                <a class="contacto__link" href="https://www.linkedin.com"><img class="contacto__icon" src="images/linkedin.png" alt="instagram icon" /></a>
-                </div>
+      <section class="contacto container-fluid">
+        <h1 class="contacto__title gradient text-center mb-5">
+          Contactanos
+        </h1>
+        <div class="contacto__container d-flex justify-content-end row mh-90">
+          <form class="col-xs-12 col-lg-6 p-5 pt-0 text-start">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                Nunca compartiremos tu email con nadie mas.
               </div>
-              <div class="contacto__datos">
-                <h3 class="contacto__h3 gradient">Datos para contactar:</h3>
-                <p class="contacto__text" >Independencia, Santiago</p>
-                <p class="contacto__text" >comercial@teknosun.cl</p>
-                <p class="contacto__text" >+56994340066</p>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">
+                Mensaje
+              </label>
+              <textarea class="form-control" id="mensaje" rows="6"></textarea>
+            </div>
+            <button type="submit" class="form-button btn btn-primary w-100 p-3">
+              Submit
+            </button>
+          </form>
+
+          <article
+            class="contacto__article col-xs-12 col-lg-6 p-5 pt-0 text-start"
+          >
+            <div class="contacto__redes">
+              <h3 class="contacto__h4 gradient mb-0">Nuestras redes:</h3>
+              <div class="contacto__links">
+                <a
+                  class="contacto__link text-decoration-none"
+                  href="https://www.instagram.com/teknosun_spa/"
+                >
+                  <img
+                    class="contacto__icon"
+                    src="images/instagram.png"
+                    alt="instagram icon"
+                  />
+                </a>
+                <a
+                  class="contacto__link text-decoration-none"
+                  href="https://www.facebook.com/teknosun.teknosun"
+                >
+                  <img
+                    class="contacto__icon"
+                    src="images/facebook.png"
+                    alt="instagram icon"
+                  />
+                </a>
+                <a
+                  class="contacto__link text-decoration-none"
+                  href="https://www.linkedin.com"
+                >
+                  <img
+                    class="contacto__icon"
+                    src="images/linkedin.png"
+                    alt="instagram icon"
+                  />
+                </a>
               </div>
-              <picture>
-                <img class="contacto__image" src="images/Map.png" alt="">
-              </picture>
-            </article>
-          </div>
-        </section>
+            </div>
+            <br />
+            <div class="contacto__datos">
+              <h3 class="contacto__h4 gradient mb-0">Datos para contactar:</h3>
+              <p class="contacto__text">Independencia, Santiago</p>
+              <p class="contacto__text">comercial@teknosun.cl</p>
+              <p class="contacto__text">+56994340066</p>
+            </div>
+            <picture class="d-none d-sm-block">
+              <img
+                class="contacto__image"
+                src="images/Map.png"
+                alt=""
+                style="height: 254px; width: 450px;"
+              />
+            </picture>
+          </article>
+        </div>
+      </section>
       <!-- fin sección contacto -->
       <!-- inicio footer -->
       <footer class="footer flex-row">
-        <p class="footer__text gradient" >copyright</p>
+        <p class="footer__text gradient">copyright</p>
         <p class="footer__text gradient">Gabriel Ramírez</p>
       </footer>
       <!-- fin footer  -->

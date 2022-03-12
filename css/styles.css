@@ -149,6 +149,10 @@ p {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.089);
 }
 
+.footer__text {
+  margin-bottom: 0;
+}
+
 .servicios .footer,
 .nosotros .footer {
   background-color: var(--primaryColor);
