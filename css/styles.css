@@ -20,7 +20,7 @@
   --secondaryColor: #040c0e;
   --fourthColor: #a6944f;
   --tertiaryColor: #223d44;
-  --tertiaryColor-opacity: rgba(34, 61, 68, 0.39);
+  --tertiaryColor-opacity: rgba(58, 66, 68, 0.932);
   --primaryColor-opacity: rgba(252, 251, 251, 0.582);
 }
 
@@ -87,8 +87,8 @@ p {
 .button {
   box-sizing: border-box;
   text-decoration: none;
-  border: 1px solid var(--fourthColor);
-  color: var(--fourthColor);
+  border: 1px solid var(--tertiaryColor);
+  color: var(--tertiaryColor);
   padding: 0.5rem 1rem;
   font-size: 2em;
   margin: 1.6rem;
@@ -96,8 +96,8 @@ p {
 }
 
 .button:hover {
-  box-shadow: 0 4px 15px var(--fourthColor);
-  color: var(--fourthColor);
+  box-shadow: 0 4px 15px var(--tertiaryColor);
+  color: var(--tertiaryColor);
 }
 
 .header {
@@ -107,8 +107,9 @@ p {
   z-index: 2;
 }
 
-.nav {
-  background: var(--primaryColor-opacity);
+.navbar {
+  /* background-color: var(--secondaryColor) !important; */
+  background-color: var(--tertiaryColor-opacity) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.089);
@@ -127,10 +128,10 @@ p {
 
 .nav-link {
   font-weight: bold;
-  background: linear-gradient(0deg, #00a1ab, #020112);
+  /* background: linear-gradient(0deg, #00a1ab, #020112);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--secondaryColor);
+  -webkit-text-fill-color: transparent; */
+  color: var(--fourthColor) !important;
   transition: transform 0.2s;
 }
 
@@ -238,7 +239,10 @@ body > .grid-container {
   grid-area: hero;
   justify-content: center;
   align-items: center;
-  background: var(--primaryColor);
+  background-image: url(../images/BG_hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
 }
 
@@ -468,9 +472,12 @@ blockquote {
   body > .nosotros,
   body > .contactanos,
   body > .servicios,
-  body > .galeria,
-  .index .inicio {
+  body > .galeria {
     margin-top: 8rem;
+  }
+
+  .inicio {
+    height: 70vh;
   }
 
   h1 {
