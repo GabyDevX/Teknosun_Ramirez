@@ -18,7 +18,7 @@
   --primaryColor: #fcfbfb;
   --fifthColor: #be9063;
   --secondaryColor: #040c0e;
-  --fourthColor: #223d44;
+  --fourthColor: #a6944f;
   --tertiaryColor: #223d44;
   --tertiaryColor-opacity: rgba(34, 61, 68, 0.39);
   --primaryColor-opacity: rgba(252, 251, 251, 0.582);
@@ -119,6 +119,7 @@ p {
   height: 48px;
   width: 200px;
   margin-left: 1.6rem;
+  fill: red;
 }
 
 .nav-item {
@@ -278,13 +279,13 @@ body > .grid-container {
 .index .nosotros .button,
 .index .servicios .button {
   color: var(--primaryColor);
-  border-color: var(--primaryColor);
+  border-color: var(--fourthColor);
 }
 
 .index .nosotros .button:hover,
 .index .servicios .button:hover {
   -webkit-text-fill-color: #fff;
-  box-shadow: 0 4px 15px var(--primaryColor-opacity);
+  box-shadow: 0 4px 15px var(--fourthColor);
 }
 
 .index .nosotros__text {
@@ -294,7 +295,7 @@ body > .grid-container {
 .index .servicios__subtitle,
 .index .nosotros__subtitle {
   margin: 0;
-  color: var(--primaryColor);
+  color: var(--fourthColor);
 }
 
 .index .servicios__items {
