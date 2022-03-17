@@ -87,18 +87,17 @@ p {
 .button {
   box-sizing: border-box;
   text-decoration: none;
-  border: 1px solid var(--tertiaryColor);
-  color: var(--tertiaryColor);
+  border: 1px solid var(--fourthColor);
+  color: var(--fourthColor);
   padding: 0.5rem 1rem;
   font-size: 2em;
   margin: 1.6rem;
+  transition: all 0.2s ease-out;
 }
 
 .button:hover {
-  box-shadow: 0 4px 15px var(--tertiaryColor-opacity);
-  background: linear-gradient(0deg, #00a1ab, #020112);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  box-shadow: 0 4px 15px var(--fourthColor);
+  color: var(--fourthColor);
 }
 
 .header {
@@ -132,10 +131,11 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--secondaryColor);
+  transition: transform 0.2s;
 }
 
-.nav-link:active {
-  color: var(--secondaryColor);
+.nav-link:hover {
+  transform: scale(1.2);
 }
 
 .servicios__contenido,
@@ -309,35 +309,6 @@ body > .grid-container {
 
 /* Inicio__Contacto y Contacto */
 
-/* .contacto__container {
-  justify-content: space-around;
-  text-align: left;
-  gap: 10px;
-}
-
-.contacto__form {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contacto__article {
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contacto__h3 {
-  color: var(--tertiaryColor);
-}
-
-.contacto__text {
-  color: var(--tertiaryColor);
-}
-
-.contacto__image {
-  height: 254px;
-  width: 450px;
-}*/
-
 .contacto__icon {
   width: 40px;
   height: auto;
@@ -346,64 +317,30 @@ body > .grid-container {
 .form-label,
 .form-text,
 .form-control {
+  color: var(--fourthColor);
   font-size: 2em;
-}
-
-.form-label {
-  background: linear-gradient(0deg, #00a1ab, #020112);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-color: var(--fourthColor);
 }
 
 .form-button {
   width: 10;
   background: #fff;
-  color: var(--tertiaryColor);
-  border: 0.1px solid rgb(199, 199, 199) !important;
+  color: var(--fourthColor);
+  border: 0.1px solid var(--fourthColor) !important;
   font-size: 1.9em;
 }
 
 .form-button:hover {
-  box-shadow: 0 4px 15px var(--tertiaryColor-opacity);
-  background: linear-gradient(0deg, #00a1ab, #020112);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  box-shadow: 0 4px 15px var(--fourthColor);
+  color: var(--fourthColor);
+  background-color: transparent;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
-/*.contacto__input,
-.contacto__textarea,
-.contacto__button {
-  width: 48rem;
-  padding: 1.2rem 2rem;
-  box-sizing: border-box;
-  border: 2px solid var(--secondaryColor);
-  background: transparent;
-  color: var(--tertiaryColor);
-  caret-color: #00a1ab;
+.contacto__h4 {
+  color: var(--fourthColor);
 }
-
-.contacto__button {
-  cursor: pointer;
-  background: linear-gradient(0deg, #00a1ab, #020112);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.contacto__input::placeholder {
-  background: linear-gradient(0deg, #00a1ab, #020112);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.contacto__textarea {
-  height: 30rem;
-}
-
-.contacto__textarea::placeholder {
-  background: linear-gradient(0deg, #00a1ab, #020112);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}*/
 
 /* Servicios */
 
@@ -468,10 +405,11 @@ body > .servicios {
   width: 200px;
   max-height: 200px;
   box-sizing: border-box;
+  transition: transform 0.3s;
 }
 
 .galeria__contenido__img:hover {
-  border: 8px solid var(--tertiaryColor);
+  transform: scale(1.2);
 }
 
 /* Nosotros */
@@ -497,6 +435,14 @@ body > .servicios {
 
 .nosotros__contenido__text {
   text-align: center;
+}
+
+blockquote {
+  color: var(--fourthColor);
+}
+
+.blockquote__title {
+  color: var(--fourthColor);
 }
 
 /* Contacto */
