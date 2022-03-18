@@ -139,6 +139,11 @@ p {
   transform: scale(1.2);
 }
 
+.btn-menu {
+  color: #fff;
+  font-size: 25px;
+}
+
 .servicios__contenido,
 .nosotros__contenido {
   color: var(--tertiaryColor);
@@ -176,9 +181,10 @@ body > .grid-container {
 }
 
 .nosotros,
-.contacto,
+.contactanos,
 .servicios,
-.galeria {
+.galeria,
+.index {
   text-align: center;
   justify-content: space-between;
 }
