@@ -1,0 +1,31 @@
+.nosotros {
+  grid-template-areas:
+    'header'
+    'contenido'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 4.8rem;
+  row-gap: 0px;
+}
+
+.nosotros__contenido {
+  padding-top: 8rem;
+  color: var(--tertiaryColor);
+}
+
+.nosotros__contenido__item {
+  margin: 0 3.2rem;
+  padding: 3.2rem;
+}
+
+.nosotros__contenido__text {
+  text-align: center;
+}
+
+blockquote {
+  color: var(--fourthColor);
+}
+
+.blockquote__title {
+  color: var(--fourthColor);
+}

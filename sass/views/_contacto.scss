@@ -1,0 +1,53 @@
+.contactanos {
+  grid-template-areas:
+    'header'
+    'contacto'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 4.8rem;
+  row-gap: 0px;
+}
+
+.contacto__title {
+  margin-bottom: 4.8rem;
+}
+
+.contactanos .contacto {
+  padding-top: 8rem;
+}
+
+.contacto__icon {
+  width: 40px;
+  height: auto;
+  border-radius: 6px;
+}
+.form-label,
+.form-text,
+.form-control {
+  color: var(--fourthColor);
+  font-size: 2em;
+  border-color: var(--fourthColor);
+}
+
+.form-button {
+  width: 10;
+  background: #fff;
+  color: var(--fourthColor);
+  border: 0.1px solid var(--fourthColor) !important;
+  font-size: 1.9em;
+}
+
+.form-button:hover {
+  box-shadow: 0 4px 15px var(--fourthColor);
+  color: var(--fourthColor);
+  background-color: transparent;
+}
+
+.contacto__h4 {
+  color: var(--fourthColor);
+}
+
+.contacto__image {
+  height: 254px;
+  width: 450px;
+}

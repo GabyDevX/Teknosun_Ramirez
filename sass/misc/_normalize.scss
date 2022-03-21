@@ -1,0 +1,100 @@
+/* Reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Globales */
+
+html {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--tertiaryColor);
+  font-size: 62.5%; /*10px*/
+}
+
+body {
+  background-color: var(--primaryColor);
+  font-family: inherit;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: var(--secondaryColor);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: 3.5em;
+  margin-bottom: 3.2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+p {
+  font-size: 2em;
+}
+
+.container {
+  background-color: var(--primaryColor);
+  color: var(--primaryColor);
+  padding: 4.8rem;
+}
+
+.button {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 1px solid var(--tertiaryColor);
+  color: var(--tertiaryColor);
+  padding: 0.5rem 1rem;
+  font-size: 2em;
+  margin: 1.6rem;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  box-shadow: 0 4px 15px var(--tertiaryColor);
+  color: var(--tertiaryColor);
+}
+
+.gradient {
+  background: linear-gradient(0deg, #00a1ab, #020112);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body > .grid-container {
+  min-height: 100vh;
+}
+
+.nosotros,
+.contactanos,
+.servicios,
+.galeria,
+.index {
+  text-align: center;
+  justify-content: space-between;
+}
+
+/* Grid areas comunes */
+
+.header {
+  grid-area: header;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+.footer {
+  grid-area: footer;
+}
