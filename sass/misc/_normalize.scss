@@ -12,13 +12,16 @@
 
 html {
   font-family: 'League Spartan', sans-serif;
-  color: var(--tertiaryColor);
+  color: $tertiaryColor;
   font-size: 62.5%; /*10px*/
 }
 
 body {
-  background-color: var(--primaryColor);
+  background-color: $primaryColor;
   font-family: inherit;
+  & > .grid-container {
+    min-height: 100vh;
+  }
 }
 
 h1 {
@@ -26,11 +29,11 @@ h1 {
   font-size: 5em;
   font-weight: 600;
   margin-bottom: 1.6rem;
-  color: var(--secondaryColor);
+  color: $secondaryColor;
 }
 
 h2 {
-  color: var(--secondaryColor);
+  color: $secondaryColor;
   font-size: 3.5em;
   margin-bottom: 3.2rem;
   font-weight: bold;
@@ -45,35 +48,30 @@ p {
 }
 
 .container {
-  background-color: var(--primaryColor);
-  color: var(--primaryColor);
+  background-color: $primaryColor;
+  color: $primaryColor;
   padding: 4.8rem;
 }
 
 .button {
   box-sizing: border-box;
   text-decoration: none;
-  border: 1px solid var(--tertiaryColor);
-  color: var(--tertiaryColor);
+  border: 1px solid $tertiaryColor;
+  color: $tertiaryColor;
   padding: 0.5rem 1rem;
   font-size: 2em;
   margin: 1.6rem;
   transition: all 0.2s ease-out;
-}
-
-.button:hover {
-  box-shadow: 0 4px 15px var(--tertiaryColor);
-  color: var(--tertiaryColor);
+  &:hover {
+    box-shadow: 0 4px 15px $tertiaryColor;
+    color: $tertiaryColor;
+  }
 }
 
 .gradient {
   background: linear-gradient(0deg, #00a1ab, #020112);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-body > .grid-container {
-  min-height: 100vh;
 }
 
 .nosotros,
@@ -97,4 +95,63 @@ body > .grid-container {
 
 .footer {
   grid-area: footer;
+}
+
+// Responsive
+
+@media screen and (max-width: 1018px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem;
+  }
+
+  body > .nosotros,
+  body > .contactanos,
+  body > .servicios,
+  body > .galeria {
+    margin-top: 8rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2.8em;
+    margin-bottom: 1.8rem;
+  }
+
+  h3 {
+    font-size: 2.4em;
+  }
+
+  p {
+    font-size: 2em;
+  }
 }

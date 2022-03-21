@@ -6,48 +6,136 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 4.8rem;
   row-gap: 0px;
+
+  & .contacto {
+    padding-top: 8rem;
+  }
 }
 
-.contacto__title {
-  margin-bottom: 4.8rem;
+.contacto {
+  &__title {
+    margin-bottom: 4.8rem;
+  }
+
+  &__icon {
+    width: 40px;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  &__h4 {
+    color: $fourthColor;
+  }
+
+  &__image {
+    height: 254px;
+    width: 450px;
+  }
 }
 
-.contactanos .contacto {
-  padding-top: 8rem;
+.form {
+  &-label,
+  &-text,
+  &-control {
+    color: $fourthColor;
+    font-size: 2em;
+    border-color: $fourthColor;
+  }
+
+  &-button {
+    width: 10;
+    background: #fff;
+    color: $fourthColor;
+    border: 0.1px solid $fourthColor !important;
+    font-size: 1.9em;
+
+    &:hover {
+      box-shadow: 0 4px 15px $fourthColor;
+      color: $fourthColor;
+      background-color: transparent;
+    }
+  }
 }
 
-.contacto__icon {
-  width: 40px;
-  height: auto;
-  border-radius: 6px;
-}
-.form-label,
-.form-text,
-.form-control {
-  color: var(--fourthColor);
-  font-size: 2em;
-  border-color: var(--fourthColor);
+// Responsive
+
+@media screen and (max-width: 1018px) {
+  .contactanos .contacto {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem;
+  }
+
+  // Este contacto aplica al contacto del index también, por eso queda distinto al selector de arriba que solo aplica al contactanos
+  .contacto {
+    &__container {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &__textarea {
+      height: 18rem;
+    }
+
+    &__article {
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+
+    &__redes,
+    &__datos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__input,
+    &__textarea,
+    &__button {
+      width: 100%;
+    }
+  }
 }
 
-.form-button {
-  width: 10;
-  background: #fff;
-  color: var(--fourthColor);
-  border: 0.1px solid var(--fourthColor) !important;
-  font-size: 1.9em;
-}
+@media screen and (max-width: 480px) {
+  .contacto {
+    &__container {
+      flex-direction: column;
+      gap: 5rem;
+    }
 
-.form-button:hover {
-  box-shadow: 0 4px 15px var(--fourthColor);
-  color: var(--fourthColor);
-  background-color: transparent;
-}
+    &__textarea {
+      height: 18rem;
+    }
 
-.contacto__h4 {
-  color: var(--fourthColor);
-}
+    &__article {
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
 
-.contacto__image {
-  height: 254px;
-  width: 450px;
+    &__redes,
+    &__datos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__input,
+    &__textarea,
+    &__button {
+      width: 100%;
+    }
+  }
 }

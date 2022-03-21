@@ -6,26 +6,35 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 4.8rem;
   row-gap: 0px;
-}
 
-.nosotros__contenido {
-  padding-top: 8rem;
-  color: var(--tertiaryColor);
-}
+  &__contenido {
+    padding-top: 8rem;
+    color: $tertiaryColor;
 
-.nosotros__contenido__item {
-  margin: 0 3.2rem;
-  padding: 3.2rem;
-}
+    &__item {
+      margin: 0 3.2rem;
+      padding: 3.2rem;
+    }
 
-.nosotros__contenido__text {
-  text-align: center;
+    &__text {
+      text-align: center;
+    }
+  }
 }
 
 blockquote {
-  color: var(--fourthColor);
+  color: $fourthColor;
+
+  &__title {
+    color: $fourthColor;
+  }
 }
 
-.blockquote__title {
-  color: var(--fourthColor);
+// Responsive
+
+@media screen and (max-width: 480px) {
+  .nosotros__contenido__item {
+    margin: 0 1rem;
+    padding: 2rem 1rem;
+  }
 }

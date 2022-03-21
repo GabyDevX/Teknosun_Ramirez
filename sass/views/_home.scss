@@ -1,5 +1,3 @@
-/* Inicio */
-
 .index {
   grid-template-areas:
     'header header'
@@ -10,97 +8,139 @@
   grid-template-rows: auto auto 80vh auto 4.8rem;
   grid-template-columns: 1fr 1fr;
   row-gap: 0px;
+
+  & .nosotros {
+    grid-area: nosotros;
+    position: relative;
+  }
+
+  & .servicios {
+    grid-area: servicios;
+    position: relative;
+  }
+
+  & .contacto {
+    grid-area: contacto;
+    background: $primaryColor;
+  }
+
+  & .inicio {
+    grid-area: hero;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/BG_hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+
+    &__title {
+      font-family: 'League Spartan', sans-serif;
+      color: $tertiaryColor;
+      margin: 4.8rem 0;
+      font-size: 8em;
+      font-weight: 600;
+    }
+
+    &__subtitle {
+      font-size: 5em;
+      font-weight: 300;
+      color: $secondaryColor;
+    }
+  }
+  // Inicio__Nosotros e Inicio__Servicios
+  & .nosotros,
+  & .servicios {
+    margin-top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background-color: $tertiaryColor;
+    color: $primaryColor;
+
+    &__subtitle {
+      margin: 0;
+      color: $fourthColor;
+    }
+
+    & .button {
+      color: $primaryColor;
+      border-color: $fourthColor;
+
+      &:hover {
+        -webkit-text-fill-color: #fff;
+        box-shadow: 0 4px 15px $fourthColor;
+      }
+    }
+  }
+
+  & .nosotros__text {
+    text-align: justify;
+  }
+
+  & .servicios__items {
+    justify-content: space-between;
+  }
+
+  & .servicios__item-text {
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
-.nosotros {
-  grid-area: nosotros;
-  position: relative;
+// Responsive
+
+@media screen and (max-width: 1018px) {
+  .index {
+    grid-template-areas:
+      'header'
+      'hero'
+      'nosotros'
+      'servicios'
+      'contacto'
+      'footer';
+    grid-template-rows: auto auto auto auto auto 4.8rem;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+
+    & .inicio {
+      height: 70vh;
+
+      &__title {
+        font-size: 4em;
+      }
+
+      &__subtitle {
+        font-size: 3em;
+      }
+    }
+  }
 }
 
-.servicios {
-  grid-area: servicios;
-  position: relative;
-}
+@media screen and (max-width: 480px) {
+  .index {
+    & .inicio {
+      min-height: 50vh;
+      &__title {
+        font-size: 4em;
+      }
 
-.contacto {
-  grid-area: contacto;
-  background: var(--primaryColor);
-}
+      &__subtitle {
+        font-size: 2.3em;
+      }
+    }
 
-/* Inicio__Hero */
-
-.index .inicio {
-  grid-area: hero;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/BG_hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.index .inicio__title {
-  font-family: 'League Spartan', sans-serif;
-  color: var(--tertiaryColor);
-  margin: 4.8rem 0;
-  font-size: 8em;
-  font-weight: 600;
-}
-
-.index .inicio__subtitle {
-  font-size: 5em;
-  font-weight: 300;
-  color: var(--secondaryColor);
-}
-
-.index .inicio__img {
-  display: none;
-  width: 60%;
-}
-
-/* Inicio__Nosotros e Inicio__Servicios*/
-
-.index .nosotros,
-.index .servicios {
-  margin-top: 0;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  background-color: var(--tertiaryColor);
-  color: var(--primaryColor);
-}
-
-.index .nosotros .button,
-.index .servicios .button {
-  color: var(--primaryColor);
-  border-color: var(--fourthColor);
-}
-
-.index .nosotros .button:hover,
-.index .servicios .button:hover {
-  -webkit-text-fill-color: #fff;
-  box-shadow: 0 4px 15px var(--fourthColor);
-}
-
-.index .nosotros__text {
-  text-align: justify;
-}
-
-.index .servicios__subtitle,
-.index .nosotros__subtitle {
-  margin: 0;
-  color: var(--fourthColor);
-}
-
-.index .servicios__items {
-  justify-content: space-between;
-}
-
-.index .servicios__item-text {
-  font-weight: bold;
-  text-align: center;
+    & .servicios__item-text {
+      font-size: 2em;
+    }
+    & .nosotros,
+    & .servicios {
+      padding-top: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
 }
