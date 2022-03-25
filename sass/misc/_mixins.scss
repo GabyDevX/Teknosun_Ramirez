@@ -1,17 +1,17 @@
 /* Helpers */
 
-.grid-container {
+@mixin grid-container {
   display: grid;
   width: 100%;
   row-gap: 20px;
   justify-items: center;
 }
 
-.flex-row {
+@mixin flexbox-row {
   display: flex;
 }
 
-.flex-column {
+@mixin flexbox-column {
   display: flex;
   flex-direction: column;
 }

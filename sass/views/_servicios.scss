@@ -3,6 +3,7 @@ body > .servicios {
 }
 
 .servicios {
+  @include grid-container;
   grid-template-areas:
     'header'
     'contenido'
@@ -12,6 +13,7 @@ body > .servicios {
   row-gap: 0px;
 
   &__contenido {
+    @include flexbox-column;
     padding-top: 8rem;
     color: $tertiaryColor;
   }

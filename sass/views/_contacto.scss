@@ -1,4 +1,5 @@
 .contactanos {
+  @include grid-container;
   grid-template-areas:
     'header'
     'contacto'

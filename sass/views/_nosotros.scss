@@ -1,4 +1,5 @@
 .nosotros {
+  @include grid-container;
   grid-template-areas:
     'header'
     'contenido'
@@ -8,6 +9,7 @@
   row-gap: 0px;
 
   &__contenido {
+    @include flexbox-column;
     padding-top: 8rem;
     color: $tertiaryColor;
 

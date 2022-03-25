@@ -1,4 +1,5 @@
 .galeria {
+  @include grid-container;
   grid-template-areas:
     'header'
     'contenido'
@@ -12,10 +13,12 @@
   }
 
   &__contenido {
+    @include flexbox-column;
     padding-top: 8rem;
     background-color: $primaryColor;
 
     &__container {
+      @include flexbox-row;
       flex-wrap: wrap;
       align-items: stretch;
       justify-content: center;

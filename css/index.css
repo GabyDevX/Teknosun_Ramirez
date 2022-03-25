@@ -45,7 +45,8 @@ p {
   color: #fcfbfb;
   padding: 4.8rem; }
 
-.button {
+.button, .index .nosotros__button,
+.index .servicios__button {
   box-sizing: border-box;
   text-decoration: none;
   border: 1px solid #223d44;
@@ -54,7 +55,8 @@ p {
   font-size: 2em;
   margin: 1.6rem;
   transition: all 0.2s ease-out; }
-  .button:hover {
+  .button:hover, .index .nosotros__button:hover,
+  .index .servicios__button:hover {
     box-shadow: 0 4px 15px #223d44;
     color: #223d44; }
 
@@ -97,10 +99,10 @@ p {
     font-weight: 300;
     margin-bottom: 1.2rem; }
   h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 2rem; }
   h3 {
-    font-size: 1.8em; }
+    font-size: 2em; }
   p {
     font-size: 1.5em; } }
 
@@ -119,19 +121,6 @@ p {
     font-size: 2em; } }
 
 /* Helpers */
-.grid-container {
-  display: grid;
-  width: 100%;
-  row-gap: 20px;
-  justify-items: center; }
-
-.flex-row {
-  display: flex; }
-
-.flex-column {
-  display: flex;
-  flex-direction: column; }
-
 .header {
   width: 100%;
   position: fixed;
@@ -161,6 +150,7 @@ p {
     transform: scale(1.2); }
 
 .footer {
+  display: flex;
   justify-content: space-between;
   padding: 0 3.2rem;
   align-items: center;
@@ -174,6 +164,10 @@ p {
     margin-bottom: 0; }
 
 .index {
+  display: grid;
+  width: 100%;
+  row-gap: 20px;
+  justify-items: center;
   grid-template-areas: 'header header' 'hero hero' 'nosotros servicios' 'contacto contacto' 'footer footer';
   grid-template-rows: auto auto 80vh auto 4.8rem;
   grid-template-columns: 1fr 1fr;
@@ -188,6 +182,8 @@ p {
     grid-area: contacto;
     background: #fcfbfb; }
   .index .inicio {
+    display: flex;
+    flex-direction: column;
     grid-area: hero;
     justify-content: center;
     align-items: center;
@@ -208,6 +204,8 @@ p {
       color: #040c0e; }
   .index .nosotros,
   .index .servicios {
+    display: flex;
+    flex-direction: column;
     margin-top: 0;
     justify-content: space-between;
     align-items: center;
@@ -221,17 +219,19 @@ p {
     .index .servicios__subtitle {
       margin: 0;
       color: #a6944f; }
-    .index .nosotros .button,
-    .index .servicios .button {
+    .index .nosotros__button,
+    .index .servicios__button {
       color: #fcfbfb;
       border-color: #a6944f; }
-      .index .nosotros .button:hover,
-      .index .servicios .button:hover {
+      .index .nosotros__button:hover,
+      .index .servicios__button:hover {
         -webkit-text-fill-color: #fff;
         box-shadow: 0 4px 15px #a6944f; }
   .index .nosotros__text {
     text-align: justify; }
   .index .servicios__items {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between; }
   .index .servicios__item-text {
     font-weight: bold;
@@ -269,11 +269,17 @@ body > .servicios {
   min-height: 100vh; }
 
 .servicios {
+  display: grid;
+  width: 100%;
+  row-gap: 20px;
+  justify-items: center;
   grid-template-areas: 'header' 'contenido' 'footer';
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 4.8rem;
   row-gap: 0px; }
   .servicios__contenido {
+    display: flex;
+    flex-direction: column;
     padding-top: 8rem;
     color: #223d44; }
 
@@ -299,6 +305,10 @@ body > .servicios {
     font-size: 2.4em; } }
 
 .galeria {
+  display: grid;
+  width: 100%;
+  row-gap: 20px;
+  justify-items: center;
   grid-template-areas: 'header' 'contenido' 'footer';
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 4.8rem;
@@ -306,9 +316,12 @@ body > .servicios {
   .galeria__title {
     margin-bottom: 4.8rem; }
   .galeria__contenido {
+    display: flex;
+    flex-direction: column;
     padding-top: 8rem;
     background-color: #fcfbfb; }
     .galeria__contenido__container {
+      display: flex;
       flex-wrap: wrap;
       align-items: stretch;
       justify-content: center;
@@ -335,11 +348,17 @@ body > .servicios {
     max-height: 110px; } }
 
 .nosotros {
+  display: grid;
+  width: 100%;
+  row-gap: 20px;
+  justify-items: center;
   grid-template-areas: 'header' 'contenido' 'footer';
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 4.8rem;
   row-gap: 0px; }
   .nosotros__contenido {
+    display: flex;
+    flex-direction: column;
     padding-top: 8rem;
     color: #223d44; }
     .nosotros__contenido__item {
@@ -359,6 +378,10 @@ blockquote {
     padding: 2rem 1rem; } }
 
 .contactanos {
+  display: grid;
+  width: 100%;
+  row-gap: 20px;
+  justify-items: center;
   grid-template-areas: 'header' 'contacto' 'footer';
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 4.8rem;
