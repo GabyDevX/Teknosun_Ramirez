@@ -50,9 +50,12 @@
 }
 
 @media screen and (max-width: 480px) {
-  .galeria__contenido__img {
-    margin: 1rem;
-    width: 110px;
-    max-height: 110px;
+  .galeria__contenido {
+    padding: 2rem;
+    &__img {
+      margin: 1rem;
+      width: 110px;
+      max-height: 110px;
+    }
   }
 }

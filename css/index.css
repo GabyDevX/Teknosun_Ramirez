@@ -301,8 +301,10 @@ body > .servicios {
     padding: 0; } }
 
 @media screen and (max-width: 480px) {
-  .servicios__contenido__summary {
-    font-size: 2.4em; } }
+  .servicios__contenido {
+    padding: 2rem; }
+    .servicios__contenido__summary {
+      font-size: 2.4em; } }
 
 .galeria {
   display: grid;
@@ -342,10 +344,12 @@ body > .servicios {
     max-height: 180px; } }
 
 @media screen and (max-width: 480px) {
-  .galeria__contenido__img {
-    margin: 1rem;
-    width: 110px;
-    max-height: 110px; } }
+  .galeria__contenido {
+    padding: 2rem; }
+    .galeria__contenido__img {
+      margin: 1rem;
+      width: 110px;
+      max-height: 110px; } }
 
 .nosotros {
   display: grid;
@@ -373,9 +377,11 @@ blockquote {
     color: #a6944f; }
 
 @media screen and (max-width: 480px) {
-  .nosotros__contenido__item {
-    margin: 0 1rem;
-    padding: 2rem 1rem; } }
+  .nosotros__contenido {
+    padding: 2rem; }
+    .nosotros__contenido__item {
+      margin: 0 1rem;
+      padding: 2rem 1rem; } }
 
 .contactanos {
   display: grid;
