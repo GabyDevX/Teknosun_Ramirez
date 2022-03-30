@@ -131,7 +131,8 @@ p {
   background-color: rgba(58, 66, 68, 0.932) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.089); }
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.089);
+  z-index: 3; }
 
 .nav-logo {
   height: 48px;
