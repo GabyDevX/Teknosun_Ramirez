@@ -50,16 +50,16 @@
                   <a class="nav-link" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="servicios.html">Servicios</a>
+                  <a class="nav-link" href="root/servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="galeria.html">Galeria</a>
+                  <a class="nav-link" href="root/galeria.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  <a class="nav-link" href="root/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contactanos</a>
+                  <a class="nav-link" href="root/contacto.html">Contactanos</a>
                 </li>
               </ul>
             </div>
@@ -72,7 +72,7 @@
       <section class="inicio container-fluid">
         <h1 class="inicio__title gradient">TeknoSun SpA</h1>
         <h2 class="inicio__subtitle">Mantención y Servicios Industriales</h2>
-        <a class="button" href="contacto.html">Contactanos</a>
+        <a class="button" href="root/contacto.html">Contactanos</a>
       </section>
       <!-- fin sección inicio -->
       <!-- inicio sección nosotros  -->
@@ -86,7 +86,7 @@
           sus requerimientos. Proporcionar un servicio integral, de alta calidad
           adaptado a sus necesidades y a costos competitivos.
         </p>
-        <a class="nosotros__button" href="contacto.html">Conocenos mas</a>
+        <a class="nosotros__button" href="root/nosotros.html">Conocenos mas</a>
       </section>
       <!-- fin sección nosotros  -->
       <!-- inicio sección servicios -->
@@ -102,7 +102,7 @@
             TeknoSun se adapta a los nuevos tiempos
           </p>
         </div>
-        <a class="servicios__button" href="servicios.html">Ver detalles</a>
+        <a class="servicios__button" href="root/servicios.html">Ver detalles</a>
       </section>
       <!-- fin sección servicios -->
       <!-- inicio sección contacto -->
@@ -111,10 +111,16 @@
           Comunicate con nosotros
         </h2>
         <div class="contacto__container d-flex justify-content-end row mh-90">
-          <form class="col-xs-12 col-lg-6 p-5 pt-0 text-start">
+          <form
+            action="mailto:gabo.ramirez0811@gmail.com"
+            method="POST"
+            accept-charset="ISO-8859-1"
+            enctype="text/plain"
+            class="col-xs-12 col-lg-6 p-5 pt-0 text-start"
+          >
             <div class="mb-3">
               <label for="name" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="name" />
+              <input type="text" class="form-control" id="name" name="Nombre" />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
@@ -123,6 +129,7 @@
                 class="form-control"
                 id="email"
                 aria-describedby="emailHelp"
+                name="Email"
               />
               <div id="emailHelp" class="form-text">
                 Nunca compartiremos tu email con nadie mas.
@@ -132,10 +139,15 @@
               <label for="mensaje" class="form-label">
                 Mensaje
               </label>
-              <textarea class="form-control" id="mensaje" rows="6"></textarea>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                rows="6"
+                name="Mensaje"
+              ></textarea>
             </div>
             <button type="submit" class="form-button btn btn-primary w-100 p-3">
-              Submit
+              Enviar
             </button>
           </form>
 
@@ -194,6 +206,7 @@
           </article>
         </div>
       </section>
+
       <!-- fin sección contacto -->
       <!-- inicio footer -->
       <footer class="footer">
