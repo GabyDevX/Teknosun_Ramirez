@@ -28,6 +28,7 @@ $font-s: (
 /* Globales */
 
 html {
+  min-height: 100%;
   font-family: 'League Spartan', sans-serif;
   color: $tertiaryColor;
   font-size: 62.5%; /*10px*/
@@ -45,6 +46,7 @@ h1 {
   text-align: center;
   font-size: map-get($font-s, h1-desktop);
   font-weight: 600;
+  margin-top: 3rem;
   margin-bottom: 1.6rem;
   color: $secondaryColor;
 }
@@ -137,17 +139,11 @@ p {
     padding: 2rem;
   }
 
-  body > .nosotros,
-  body > .contactanos,
-  body > .servicios,
-  body > .galeria {
-    margin-top: 8rem;
-  }
-
   h1 {
     text-align: center;
     font-size: map-get($font-s, h1-tablet);
     font-weight: 300;
+    margin-top: 1rem;
     margin-bottom: 1.2rem;
   }
 

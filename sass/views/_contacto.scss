@@ -1,3 +1,7 @@
+body > .contactanos {
+  min-height: 100vh;
+}
+
 .contactanos {
   @include grid-container;
   grid-template-areas:
@@ -64,7 +68,6 @@
   .contactanos .contacto {
     margin-left: 0;
     margin-right: 0;
-    padding: 2rem;
   }
 
   // Este contacto aplica al contacto del index también, por eso queda distinto al selector de arriba que solo aplica al contactanos
