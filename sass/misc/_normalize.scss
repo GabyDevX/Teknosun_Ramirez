@@ -78,6 +78,7 @@ p {
   font-size: 2em;
   margin: 1.6rem;
   transition: all 0.2s ease-out;
+  animation: float 4s ease-in-out infinite;
   &:hover {
     box-shadow: 0 4px 15px $tertiaryColor;
     color: $tertiaryColor;
@@ -183,5 +184,17 @@ p {
 
   p {
     font-size: map-get($font-s, p-mobile);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

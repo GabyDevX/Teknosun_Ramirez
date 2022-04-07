@@ -53,7 +53,8 @@ p {
   padding: 0.5rem 1rem;
   font-size: 2em;
   margin: 1.6rem;
-  transition: all 0.2s ease-out; }
+  transition: all 0.2s ease-out;
+  animation: float 4s ease-in-out infinite; }
   .button:hover, .index .nosotros__button:hover,
   .index .servicios__button:hover {
     box-shadow: 0 4px 15px #223d44;
@@ -128,6 +129,14 @@ p {
   p {
     font-size: 2em; } }
 
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+
 /* Helpers */
 .header {
   width: 100%;
@@ -140,16 +149,17 @@ p {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.089);
-  z-index: 3; }
+  z-index: 5;
+  padding: 1.2rem; }
 
 .nav-logo {
   height: 48px;
   width: 200px;
-  margin-left: 1.6rem;
   fill: red; }
 
 .nav-item {
-  font-size: 1.6em; }
+  font-size: 1.9em;
+  margin-bottom: 0; }
 
 .nav-link {
   font-weight: bold;
@@ -292,14 +302,17 @@ body > .servicios {
     padding-top: 8rem;
     color: #223d44; }
 
-.accordion-button:focus {
-  box-shadow: none; }
-
-.accordion-button:not(.collapsed) {
-  color: #000;
-  background-color: #fff; }
-  .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+.accordion {
+  z-index: 0; }
+  .accordion-button {
+    font-size: 3rem; }
+    .accordion-button:focus {
+      box-shadow: none; }
+    .accordion-button:not(.collapsed) {
+      color: #000;
+      background-color: #fff; }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
 
 @media screen and (max-width: 1018px) {
   .servicios__contenido__summary {
@@ -307,13 +320,17 @@ body > .servicios {
     font-size: 1.8em; }
   .servicios__contenido__item {
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  .accordion-button {
+    font-size: 1.2em; } }
 
 @media screen and (max-width: 480px) {
   .servicios__contenido {
     padding: 2rem; }
     .servicios__contenido__summary {
-      font-size: 2.4em; } }
+      font-size: 2.4em; }
+  .accordion-button {
+    font-size: 0.8em; } }
 
 .galeria {
   display: grid;

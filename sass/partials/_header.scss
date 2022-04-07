@@ -10,18 +10,19 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.089);
-  z-index: 3;
+  z-index: 5;
+  padding: 1.2rem;
 }
 
 .nav {
   &-logo {
     height: 48px;
     width: 200px;
-    margin-left: 1.6rem;
     fill: red;
   }
   &-item {
-    font-size: 1.6em;
+    font-size: 1.9em;
+    margin-bottom: 0;
   }
   &-link {
     font-weight: bold;
