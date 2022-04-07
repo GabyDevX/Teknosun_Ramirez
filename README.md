@@ -1,8 +1,12 @@
-# TeknoSun project
+# TeknoSun Proyecto
 
-## CoderHouse web development course
+## CoderHouse Curso de Desarrollo Web
 
-### Go to live [Demo](https://gabydevx.github.io/Teknosun_Ramirez/) now and see the magic on this project
+### Ve en vivo el [Demo](https://gabydevx.github.io/Teknosun_Ramirez/) y conocé toda la magia de este proyecto
+
+### TeknoSun:
+
+Este proyecto es la creación de una página web para la empresa TeknoSun, la cual se encarga de realizar mantención de maquinarias, reparaciones y prevención de futuros daños en las mismas, una empresa con mucha experiencia en el sector industrial y que cuenta también con profesionales de muy alto nivel.
 
 ### SEO:
 
